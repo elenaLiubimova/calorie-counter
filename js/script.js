@@ -1,11 +1,27 @@
 let submitButton = document.querySelector('.form__submit-button');
-/*let resetButton = document.querySelector('.form__reset-button');
-let inputAge = document.getElementById(age);
-let inputHeight = document.getElementById(height);
-let inputWeight = document.getElementById(weight);
-let inputsGroup = document.querySelector('.inputs-group');*/
+let counterForm = document.querySelector('.counter__form');
+let age = document.getElementById('age');
+let height = document.getElementById('height');
+let weight = document.getElementById('weight');
+let ageValue;
+let heightValue = height.value;
+let weightValue = weight.value;
 
-/*let inputs = inputsGroup.querySelectorAll('input');
-console.log(inputs);
-console.log('Hello world!');*/
+age.addEventListener('input', function() {
+  ageValue = age.value;
+  console.log(ageValue);
+  return ageValue;
+});
+
+console.log(ageValue);
+
+height.addEventListener('input', function() {
+  console.log(height.value)
+});
+
+weight.addEventListener('input', function() {
+  console.log(weight.value)
+});
+
+
 
